@@ -1,0 +1,43 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script id="dsq-count-scr" src="//http://justynjen.disqus.com/count.js" async></script>
+<script>
+$( document ).ready(function() {
+   $(".hamburger-button").click(function(){
+     $(".hamburger-button").toggleClass("active");
+     $(".hamburger-menu").slideToggle();
+   });
+});
+</script>
+<script
+    type="text/javascript"
+    async defer
+    src="//assets.pinterest.com/js/pinit.js">
+</script>
+
+<!-- Carousel JavaScript -->
+<script>
+$('#carouselFade').carousel();
+</script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+  navbar.classList.add("sticky")
+} else {
+  navbar.classList.remove("sticky");
+}
+}
+</script>

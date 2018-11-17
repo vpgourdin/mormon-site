@@ -1,0 +1,46 @@
+categories:
+  - Travel
+  - Digital Nomad
+  - Work
+  - Countries
+  - Cities
+  - Blogging
+  - Bali
+  - Middle East
+
+gems:
+  - jekyll-archives
+
+
+jekyll-archives:
+  enabled: all
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "default"
+      title: The Gourdins
+      banner-image: /images/aspens.jpg
+
+_options:
+  image_path:
+    width: 90
+    height: 120
+    resize_style: "contain"
+    mime_type: "image/jpeg"
+    expandable: true
+  content:
+    width: 90
+    height: 120
+    resize_style: "cover"
+    mime_type: "image/png"
